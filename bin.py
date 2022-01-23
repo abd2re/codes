@@ -18,11 +18,13 @@ def bin(arr, phrase):
         for i in arr:
             if let == i:
                 x = arr.index(i)
-                binary = binary+" "+conv(x)
+                if binary == "":
+                    binary = conv(x)
+                else:
+                    binary = binary+" "+conv(x)
             else:
                 continue
     print(binary)
 
 exem = input("Mettez votre phrase et je la transforme en ecriture binaire: ")
 bin(char,exem)
-
