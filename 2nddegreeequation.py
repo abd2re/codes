@@ -1,7 +1,7 @@
 import math as m
 
 def st(a,b,c):
-    delta = m.pow(b,2) + 4 * (a*c)
+    delta = m.pow(b,2) - 4 * (a*c)
 
     if delta != 0:
         x1 = (-1 * b - m.sqrt(delta))/(2*a)
