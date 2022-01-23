@@ -8,8 +8,8 @@ def st(a,b,c):
         x2 = (-1 * b + m.sqrt(delta))/(2*a)
         return x1 and x2
     else:
-        x0 = x1 = (-1 * b)/(2*a)
+        x0 = (-1 * b)/(2*a)
         return x0
 
-print(st(-4,4,1))
+print(st(-4,7,12))
 
