@@ -1,4 +1,4 @@
-p = input('Inp :')
+p = input('inp: ')
 c = 0
 d = 0
 h = []
@@ -17,9 +17,16 @@ for i in v:
     if i == '^': d += 1
     elif i == 'v': d -= 1
 
+if len(p) == 1:
+    print('1',p,'0')
+elif abs(d) < abs(c):
+    print('1',p,(len(h)-abs(c) + len(v)))
+elif abs(c) < abs(d):
+    print('1',p,(len(h) + len(v)-abs(d)))
+else:
+    print('1',p,'1')
 
 
-print(p,(len(h)-abs(c) + len(v)-abs(d)))
 
 #Given a string of arrows ^ > V and <, find the minimum number of turns you 
 #would need to make to point all the arrows in the same direction, eg. for ^^^>,
