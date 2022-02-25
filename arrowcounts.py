@@ -1,4 +1,4 @@
-p = input('inp: ')
+p = input('input : ')
 c = 0
 d = 0
 h = []
@@ -19,13 +19,10 @@ for i in v:
 
 if len(p) == 1:
     print('1',p,'0')
-elif abs(d) < abs(c):
+elif abs(d) <= abs(c):
     print('1',p,(len(h)-abs(c) + len(v)))
-elif abs(c) < abs(d):
+elif abs(c) <= abs(d):
     print('1',p,(len(h) + len(v)-abs(d)))
-else:
-    print('1',p,'1')
-
 
 
 #Given a string of arrows ^ > V and <, find the minimum number of turns you 
