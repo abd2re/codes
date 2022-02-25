@@ -15,6 +15,8 @@ for i in h:
 
 print(len(h)-abs(c) + len(v))
 
-
+#Given a string of arrows ^ > V and <, find the minimum number of turns you 
+#would need to make to point all the arrows in the same direction, eg. for ^^^>,
+#1 turn to make it ^^^^, and for ^^v, 2 turns to make it ^^^
 
 
