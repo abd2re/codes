@@ -1,7 +1,5 @@
 import pandas as pd
 import numpy as np
-import os
-from openpyxl import load_workbook
 excel_path = 'testt.xlsx'
 src = 'https://en.wikipedia.org/wiki/The_World%27s_Billionaires'
 
